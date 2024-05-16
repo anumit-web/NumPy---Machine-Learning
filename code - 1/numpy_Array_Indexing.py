@@ -1,7 +1,7 @@
 #   python3 pandas_Read_CSV.py
 """
 
-python3 numpy_Create_Creating_Arrays.py
+python3 numpy_Array_Indexing.py
 
 """
 
@@ -10,66 +10,50 @@ import numpy as np
 
 print("************************************")
 
-arr = np.array([1, 2, 3, 4, 5])
+arr = np.array([1, 2, 3, 4])
 
-print(arr)
-
-print(type(arr))
+print(arr[0]) 
 
 print("---------------------------------------------------")
 
-arr = np.array((1, 2, 3, 4, 5))
+arr = np.array([1, 2, 3, 4])
 
-print(arr) 
-
-
-print("---------------------------------------------------")
-
-arr = np.array(42)
-
-print(arr) 
+print(arr[1]) 
 
 print("---------------------------------------------------")
 
-arr = np.array([1, 2, 3, 4, 5])
+arr = np.array([1, 2, 3, 4])
 
-print(arr)
-
-print("---------------------------------------------------")
-
-arr = np.array(
-        [
-            [1, 2, 3], 
-            [4, 5, 6]
-        ]
-    )
-
-print(arr) 
+print(arr[2] + arr[3]) 
 
 print("---------------------------------------------------")
 
-arr = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
 
-print(arr) 
-
-print("---------------------------------------------------")
-
-a = np.array(42)
-b = np.array([1, 2, 3, 4, 5])
-c = np.array([[1, 2, 3], [4, 5, 6]])
-d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
-
-print(a.ndim)
-print(b.ndim)
-print(c.ndim)
-print(d.ndim) 
+print('2nd element on 1st row: ', arr[0, 1]) 
 
 print("---------------------------------------------------")
 
-arr = np.array([1, 2, 3, 4], ndmin=5)
+arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
 
-print(arr)
-print('number of dimensions :', arr.ndim)
+print('5th element on 2nd row: ', arr[1, 4]) 
+
+print("---------------------------------------------------")
+
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+
+print(arr[0, 1, 2])
+
+print("---------------------------------------------------")
+
+arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+
+print('Last element from 2nd dim: ', arr[1, -1]) 
+
+print("---------------------------------------------------")
+
+
+print("---------------------------------------------------")
 
 
 
